@@ -1,4 +1,4 @@
-package Games.ExtraGameMonsters;
+package Games.MonstersGame;
 
 public class Werewolf extends Monster {
     public Werewolf() {

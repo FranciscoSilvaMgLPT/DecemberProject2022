@@ -1,4 +1,4 @@
-package Games.ExtraGameMonsters;
+package Games.MonstersGame;
 
 import Games.Collors;
 import player.Icons;
@@ -37,31 +37,16 @@ public class MonsterMain {
         Player.players.add(ze1);
         Player.players.add(ze2);
         Player.players.add(ze3);
-        playMonsters(ze);
+        playMonsters(ze,ze1);
     }
 
-    public static int playMonsters(Player player0) {
+    public static int playMonsters(Player player0, Player player1) {
         String passEnter1 = " ";
         monsters.add(werewolf);
         monsters.add(vampire);
         monsters.add(mummy);
-
-        int option;
-        boolean win = false;
-        Player player1;
         MonstersIntroText();
         separatorText();
-        System.out.println(Collors.redBCollor + "Hello " + player0 + ", choose a player number you want to fight/delay!(if you win)" + Collors.resetCollor);
-        for (int i = 0; i < Player.players.size(); i++) {
-            if (Player.players.get(i) != player0) {
-                System.out.println(i + " -" + Player.players.get(i).getName() + Player.players.get(i).icons.icon);
-            }
-        }
-        System.out.print("Player number:");
-        option = sc.nextInt();
-        player1 = Player.players.get(option);
-        separatorText();
-        System.out.println(Collors.redBCollor + ">>>> " + player0 + " VS " + player1 + " <<<<" + Collors.resetCollor);
         monsterPlayers.add(player0);
         monsterPlayers.add(player1);
         System.out.println("How many monsters you want each team to have? (max 3)");

@@ -1,4 +1,4 @@
-package Games.ExtraGameMonsters;
+package Games.MonstersGame;
 
 import Games.Collors;
 

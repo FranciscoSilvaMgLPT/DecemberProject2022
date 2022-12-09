@@ -19,6 +19,9 @@ public class Player {
         this.icons = icons;
         this.position = 0;
     }
+    public Player(String name){
+        this.name = name;
+    }
 
     @Override
     public String toString() {

@@ -1,7 +1,8 @@
-import Games.BoardGame.BoardGame;
+import Games.TextEditor;
 
 public class Main {
     public static void main(String[] args) {
-        BoardGame.gameStart();
+        BaseApp.StartApp();
+
     }
 }

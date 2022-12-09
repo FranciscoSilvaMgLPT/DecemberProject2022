@@ -1,4 +1,4 @@
-package Games.ExtraGameBattleship;
+package Games.BattleshipGame;
 
 import Games.Collors;
 import Games.TextEditor;
@@ -8,7 +8,7 @@ import player.Player;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static Games.ExtraGameBattleship.BattleshipBoard.*;
+import static Games.BattleshipGame.BattleshipBoard.*;
 
 public class BattleshipMain {
 

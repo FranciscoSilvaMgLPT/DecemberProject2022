@@ -9,6 +9,8 @@ public abstract class Collors {
     public static String cyanBCollor = "\u001B[46m";
     public static String redCollor = "\u001B[31m";
     public static String redBCollor = "\u001B[41m";
+    public static String yellowCollor = "\u001B[33m";
+    public static String yellowBCollor = "\u001B[43m";
     public static String resetCollor = "\u001B[0m";
 
 

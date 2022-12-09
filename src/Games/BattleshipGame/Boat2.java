@@ -1,4 +1,4 @@
-package Games.ExtraGameBattleship;
+package Games.BattleshipGame;
 
 public class Boat2 extends Boat {
     static String name = "boat2";

@@ -1,4 +1,4 @@
-package Games.ExtraGameBattleship;
+package Games.BattleshipGame;
 
 import Games.Collors;
 import Games.TextEditor;

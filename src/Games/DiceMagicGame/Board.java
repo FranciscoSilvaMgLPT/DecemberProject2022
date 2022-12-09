@@ -1,4 +1,4 @@
-package Games.BoardGame;
+package Games.DiceMagicGame;
 
 import Games.Collors;
 import Games.TextEditor;

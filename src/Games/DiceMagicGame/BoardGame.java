@@ -1,12 +1,14 @@
-package Games.BoardGame;
+package Games.DiceMagicGame;
 
 import Games.Collors;
-import Games.ExtraGameBattleship.BattleshipMain;
-import Games.ExtraGameMonsters.MonsterMain;
+import Games.BattleshipGame.BattleshipMain;
+import Games.MonstersGame.MonsterMain;
 import Games.TextEditor;
 import player.Player;
 
 import java.util.Scanner;
+
+import static Games.TextEditor.separatorText;
 
 public class BoardGame {
 
@@ -235,7 +237,19 @@ public class BoardGame {
             switch (game) {
                 case 1:
                     System.out.println("Mini Game: " + Collors.redCollor + "MONSTERS GAME" + Collors.resetCollor);
-                    looser = MonsterMain.playMonsters(Player.players.get(i));
+
+                    System.out.println(Collors.redBCollor + "Hello " + Player.players.get(i) + ", choose a player number you want to fight/delay!(if you win)" + Collors.resetCollor);
+                    for (int o = 0; o < Player.players.size(); o++) {
+                        if (Player.players.get(o) != Player.players.get(i)) {
+                            System.out.println(o + " -" + Player.players.get(o).getName() + Player.players.get(o).icons.icon);
+                        }
+                    }
+                    System.out.print("Player number:");
+                    option = sc.nextInt();
+                    Player player1 = Player.players.get(option);
+                    separatorText();
+                    System.out.println(Collors.redBCollor + ">>>> " + Player.players.get(i) + " VS " + player1 + " <<<<" + Collors.resetCollor);
+                    looser = MonsterMain.playMonsters(Player.players.get(i),player1);
                     if (looser == 0) {
                         if (Board.aSpots.get(j - dice).get(0).contains("   ")) {
                             Board.aSpots.get(j - dice).set(0, Player.players.get(i).icons.icon);

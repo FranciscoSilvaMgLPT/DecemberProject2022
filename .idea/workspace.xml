@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c5e26f7-cf4f-4301-89ce-a36e2277a847" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DecemberProj.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="8c5e26f7-cf4f-4301-89ce-a36e2277a847" name="Changes" comment="Creation of application base code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/BaseApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/BoardGame/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/DiceMagicGame/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/BoardGame/BoardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/DiceMagicGame/BoardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/Collors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/Collors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameBattleship/BattleshipBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/BattleshipGame/BattleshipBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameBattleship/BattleshipMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/BattleshipGame/BattleshipMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameBattleship/Boat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/BattleshipGame/Boat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameBattleship/Boat2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/BattleshipGame/Boat2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameBattleship/Boat3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/BattleshipGame/Boat3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameBattleship/Boat4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/BattleshipGame/Boat4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameMonsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/MonstersGame/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameMonsters/MonsterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/MonstersGame/MonsterMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameMonsters/Mummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/MonstersGame/Mummy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameMonsters/Vampire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/MonstersGame/Vampire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/ExtraGameMonsters/Werewolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/MonstersGame/Werewolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Games/TextEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Games/TextEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +61,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670408897805</updated>
     </task>
+    <task id="LOCAL-00001" summary="Creation of application base code">
+      <created>1670584777375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670584777375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -54,5 +81,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creation of application base code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of application base code" />
   </component>
 </project>
