@@ -1,6 +1,6 @@
 package Games.MonstersGame;
 
-import Games.Collors;
+import Games.Colors;
 
 public class Vampire extends Monster {
     int bite = 5;
@@ -38,7 +38,7 @@ public class Vampire extends Monster {
 
     @Override
     public String toString() {
-        return "Monster nº [" + position + "]-> " + Collors.redCollor + name + Collors.resetCollor + "\n" +
+        return "Monster nº [" + position + "]-> " + Colors.redColor + name + Colors.resetColor + "\n" +
                 "Health❤️: " + health + "\n" +
                 "Damage💥: " + damage + "\n" +
                 "Bite🦷(heal): " + bite + "\n" +

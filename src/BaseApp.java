@@ -1,14 +1,12 @@
 import Games.BattleshipGame.BattleshipMain;
-import Games.Collors;
 import Games.DiceMagicGame.BoardGame;
 import Games.MonstersGame.MonsterMain;
 import Games.TextEditor;
+import Games.TheSimsJava.TheSims;
 import player.Icons;
 import player.Player;
 
 import java.util.Scanner;
-
-import static Games.TextEditor.separatorText;
 
 public class BaseApp {
     static Scanner sc = new Scanner(System.in);
@@ -23,8 +21,8 @@ public class BaseApp {
            case 0:
                break;
            case 1:
-
-
+               System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+               TheSims.startTheSims();
                BaseApp.StartApp();
                break;
            case 2:
@@ -41,15 +39,13 @@ public class BaseApp {
                BaseApp.StartApp();
                break;
            case 4:
-
-
                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                System.out.print("Insert Player 1 Name:");
                name = sc.next();
                Player player0 = new Player(name, Icons.Pig);
                System.out.print("Insert Player 2 Name:");
                name = sc.next();
-               Player player1 = new Player(name,Icons.Pinto);
+               Player player1 = new Player(name,Icons.Pig);
                MonsterMain.playMonsters(player0,player1);
                BaseApp.StartApp();
                break;

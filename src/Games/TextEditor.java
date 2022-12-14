@@ -34,13 +34,13 @@ public abstract class TextEditor {
     }
 
     public static void MonstersIntroText() {
-        System.out.println(Collors.redCollor + "\n" +
+        System.out.println(Colors.redColor + "\n" +
                 "                   ☠            ███╗░░░███╗░█████╗░███╗░░██╗░██████╗████████╗███████╗██████╗░░██████╗      ░██████╗░░█████╗░███╗░░░███╗███████╗            ☠\n" +
                 "                   ☠            ████╗░████║██╔══██╗████╗░██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗██╔════╝      ██╔════╝░██╔══██╗████╗░████║██╔════╝            ☠\n" +
                 "                   ☠            ██╔████╔██║██║░░██║██╔██╗██║╚█████╗░░░░██║░░░█████╗░░██████╔╝╚█████╗░      ██║░░██╗░███████║██╔████╔██║█████╗░░            ☠\n" +
                 "                   ☠            ██║╚██╔╝██║██║░░██║██║╚████║░╚═══██╗░░░██║░░░██╔══╝░░██╔══██╗░╚═══██╗      ██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░            ☠\n" +
                 "                   ☠            ██║░╚═╝░██║╚█████╔╝██║░╚███║██████╔╝░░░██║░░░███████╗██║░░██║██████╔╝      ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗            ☠\n" +
-                "                   ☠            ╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═════╝░      ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝            ☠" + Collors.resetCollor);
+                "                   ☠            ╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═════╝░      ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝            ☠" + Colors.resetColor);
         System.out.println();
         System.out.println();
 
@@ -50,46 +50,82 @@ public abstract class TextEditor {
         System.out.println();
         System.out.println();
         System.out.println("\n" +
-                "                                      " + Collors.blueCollor + "██████╗░░█████╗░████████╗████████╗██╗░░░░░███████╗░██████╗██╗░░██╗██╗██████╗░    " + Collors.redCollor + " ░██╗░░░░░░░██╗░█████╗░██████╗░░██████╗\n" +
-                "                                      " + Collors.blueCollor + "██████╦╝███████║░░░██║░░░░░░██║░░░██║░░░░░█████╗░░╚█████╗░███████║██║██████╔╝    " + Collors.redCollor + " ░╚██╗████╗██╔╝███████║██████╔╝╚█████╗░\n" +
-                "                                      " + Collors.blueCollor + "██╔══██╗██╔══██║░░░██║░░░░░░██║░░░██║░░░░░██╔══╝░░░╚═══██╗██╔══██║██║██╔═══╝░    " + Collors.redCollor + " ░░████╔═████║░██╔══██║██╔══██╗░╚═══██╗\n" +
-                "                                      " + Collors.blueCollor + "██████╦╝██║░░██║░░░██║░░░░░░██║░░░███████╗███████╗██████╔╝██║░░██║██║██║░░░░░    " + Collors.redCollor + " ░░╚██╔╝░╚██╔╝░██║░░██║██║░░██║██████╔╝\n" +
-                "                                      " + Collors.blueCollor + "╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░    " + Collors.redCollor + " ░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░" + Collors.resetCollor);
+                "                                      " + Colors.blueColor + "██████╗░░█████╗░████████╗████████╗██╗░░░░░███████╗░██████╗██╗░░██╗██╗██████╗░    " + Colors.redColor + " ░██╗░░░░░░░██╗░█████╗░██████╗░░██████╗\n" +
+                "                                      " + Colors.blueColor + "██████╦╝███████║░░░██║░░░░░░██║░░░██║░░░░░█████╗░░╚█████╗░███████║██║██████╔╝    " + Colors.redColor + " ░╚██╗████╗██╔╝███████║██████╔╝╚█████╗░\n" +
+                "                                      " + Colors.blueColor + "██╔══██╗██╔══██║░░░██║░░░░░░██║░░░██║░░░░░██╔══╝░░░╚═══██╗██╔══██║██║██╔═══╝░    " + Colors.redColor + " ░░████╔═████║░██╔══██║██╔══██╗░╚═══██╗\n" +
+                "                                      " + Colors.blueColor + "██████╦╝██║░░██║░░░██║░░░░░░██║░░░███████╗███████╗██████╔╝██║░░██║██║██║░░░░░    " + Colors.redColor + " ░░╚██╔╝░╚██╔╝░██║░░██║██║░░██║██████╔╝\n" +
+                "                                      " + Colors.blueColor + "╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░    " + Colors.redColor + " ░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░" + Colors.resetColor);
         System.out.println();
     }
 
     public static void BaseIntro() {
         System.out.println(
-                "\n" + Collors.blueCollor +
+                "\n" + Colors.blueColor +
                         "                    ██╗░░░░░██╗██████╗░██████╗░░█████╗░██████╗░██╗░░░██╗          ░░░░░██╗░█████╗░██╗░░░██╗░█████╗          ░░██████╗░░█████╗░███╗░░░███╗███████╗░██████╗\n" +
                         "                    ██║░░░░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗╚██╗░██╔╝          ░░░░░██║██╔══██╗██║░░░██║██╔══██╗          ██╔════╝░██╔══██╗████╗░████║██╔════╝██╔════╝\n" +
                         "                    ██║░░░░░██║██████╦╝██████╔╝███████║██████╔╝░╚████╔╝          ░░░░░░██║███████║╚██╗░██╔╝███████║          ██║░░██╗░███████║██╔████╔██║█████╗░░╚█████╗░\n" +
                         "                    ██║░░░░░██║██╔══██╗██╔══██╗██╔══██║██╔══██╗░░╚██╔╝          ░░██╗░░██║██╔══██║░╚████╔╝░██╔══██║          ██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░░╚═══██╗\n" +
                         "                    ███████╗██║██████╦╝██║░░██║██║░░██║██║░░██║░░░██║          ░░░╚█████╔╝██║░░██║░░╚██╔╝░░██║░░██║          ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗██████╔╝\n" +
-                        "                    ╚══════╝╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝          ░░░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░" + Collors.resetCollor
+                        "                    ╚══════╝╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝          ░░░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░" + Colors.resetColor
         );
     }
 
     public static void GameList() {
         System.out.println();
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"+Collors.cyanBCollor+"                               "+Collors.resetCollor);
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"+ Colors.cyanBColor +"                               "+ Colors.resetColor);
         System.out.println();
-        System.out.println(Collors.redCollor + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\uD835\uDD3E\uD835\uDD52\uD835\uDD5E\uD835\uDD56 \uD835\uDD43\uD835\uDD5A\uD835\uDD64\uD835\uDD65:" + Collors.resetCollor);
+        System.out.println(Colors.redColor + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\uD835\uDD3E\uD835\uDD52\uD835\uDD5E\uD835\uDD56 \uD835\uDD43\uD835\uDD5A\uD835\uDD64\uD835\uDD65:" + Colors.resetColor);
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t① -    "+Collors.yellowCollor+"\uD83C\uDD43\uD83C\uDD37\uD83C\uDD34 \uD83C\uDD42\uD83C\uDD38\uD83C\uDD3C\uD83C\uDD42 \uD83C\uDD39\uD83C\uDD30\uD83C\uDD45\uD83C\uDD30"+Collors.resetCollor);
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t① -    "+ Colors.yellowColor +"\uD83C\uDD43\uD83C\uDD37\uD83C\uDD34 \uD83C\uDD42\uD83C\uDD38\uD83C\uDD3C\uD83C\uDD42 \uD83C\uDD39\uD83C\uDD30\uD83C\uDD45\uD83C\uDD30"+ Colors.resetColor);
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t② -    "+Collors.yellowCollor+"\uD83C\uDD3C\uD83C\uDD30\uD83C\uDD36\uD83C\uDD38\uD83C\uDD32 \uD83C\uDD33\uD83C\uDD38\uD83C\uDD32\uD83C\uDD34 \uD83C\uDD36\uD83C\uDD30\uD83C\uDD3C\uD83C\uDD34"+Collors.resetCollor);
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t② -    "+ Colors.yellowColor +"\uD83C\uDD3C\uD83C\uDD30\uD83C\uDD36\uD83C\uDD38\uD83C\uDD32 \uD83C\uDD33\uD83C\uDD38\uD83C\uDD32\uD83C\uDD34 \uD83C\uDD36\uD83C\uDD30\uD83C\uDD3C\uD83C\uDD34"+ Colors.resetColor);
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t③ -    "+Collors.yellowCollor+"\uD83C\uDD31\uD83C\uDD30\uD83C\uDD43\uD83C\uDD43\uD83C\uDD3B\uD83C\uDD34\uD83C\uDD42\uD83C\uDD37\uD83C\uDD38\uD83C\uDD3F"+Collors.resetCollor);
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t③ -    "+ Colors.yellowColor +"\uD83C\uDD31\uD83C\uDD30\uD83C\uDD43\uD83C\uDD43\uD83C\uDD3B\uD83C\uDD34\uD83C\uDD42\uD83C\uDD37\uD83C\uDD38\uD83C\uDD3F"+ Colors.resetColor);
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t④ -    "+Collors.yellowCollor+"\uD83C\uDD3C\uD83C\uDD3E\uD83C\uDD3D\uD83C\uDD42\uD83C\uDD43\uD83C\uDD34\uD83C\uDD41\uD83C\uDD42 \uD83C\uDD36\uD83C\uDD30\uD83C\uDD3C\uD83C\uDD34"+Collors.resetCollor);
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t④ -    "+ Colors.yellowColor +"\uD83C\uDD3C\uD83C\uDD3E\uD83C\uDD3D\uD83C\uDD42\uD83C\uDD43\uD83C\uDD34\uD83C\uDD41\uD83C\uDD42 \uD83C\uDD36\uD83C\uDD30\uD83C\uDD3C\uD83C\uDD34"+ Colors.resetColor);
         System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t-------------------------------");
         System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t⓪ -    \uD83C\uDD34\uD83C\uDD47\uD83C\uDD38\uD83C\uDD43");
         System.out.println();
-        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"+Collors.cyanBCollor+"                               "+Collors.resetCollor);
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"+ Colors.cyanBColor +"                               "+ Colors.resetColor);
         System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\uD83C\uDD5E\uD83C\uDD5F\uD83C\uDD63\uD83C\uDD58\uD83C\uDD5E\uD83C\uDD5D:");
     }
+
+    public static void TheSimsIntro() {
+        System.out.println(
+                "\n" + Colors.yellowColor +
+                        "                                                                      ████████╗██╗░░██╗███████╗  ░██████╗██╗███╗░░░███╗░██████╗  ░░░░░██╗░█████╗░██╗░░░██╗░█████╗░\n" +
+                        "                                                                      ╚══██╔══╝██║░░██║██╔════╝  ██╔════╝██║████╗░████║██╔════╝  ░░░░░██║██╔══██╗██║░░░██║██╔══██╗\n" +
+                        "                                                                      ░░░██║░░░███████║█████╗░░  ╚█████╗░██║██╔████╔██║╚█████╗░  ░░░░░██║███████║╚██╗░██╔╝███████║\n" +
+                        "                                                                      ░░░██║░░░██╔══██║██╔══╝░░  ░╚═══██╗██║██║╚██╔╝██║░╚═══██╗  ██╗░░██║██╔══██║░╚████╔╝░██╔══██║\n" +
+                        "                                                                      ░░░██║░░░██║░░██║███████╗  ██████╔╝██║██║░╚═╝░██║██████╔╝  ╚█████╔╝██║░░██║░░╚██╔╝░░██║░░██║\n" +
+                        "                                                                      ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝  ╚═════╝░╚═╝╚═╝░░░░░╚═╝╚═════╝░  ░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝"
+                        + Colors.resetColor);
+    }
+
+
+    public static void seeSimsMenu(){
+        System.out.println(Colors.redColor+"\n\n\n\n" +
+                "                                                                                                          ╭━┳━╮\n" +
+                "                                                                                                          ┃┃┃┃┣━┳━┳┳┳╮\n" +
+                "                                                                                                          ┃┃┃┃┃┻┫┃┃┃┃┃\n" +
+                "                                                                                                          ╰┻━┻┻━┻┻━┻━╯"+Colors.resetColor);
+        System.out.println();
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t① -    "+ Colors.yellowColor +"\uD83C\uDD42\uD83C\uDD34\uD83C\uDD34 \uD83C\uDD42\uD83C\uDD38\uD83C\uDD3C\uD83C\uDD42"+ Colors.resetColor);
+        System.out.println();
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t② -    "+ Colors.yellowColor +"\uD83C\uDD32\uD83C\uDD41\uD83C\uDD34\uD83C\uDD30\uD83C\uDD43\uD83C\uDD34 \uD83C\uDD42\uD83C\uDD38\uD83C\uDD3C\uD83C\uDD42"+ Colors.resetColor);
+        System.out.println();
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t③ -    "+ Colors.yellowColor +"\uD83C\uDD3F\uD83C\uDD3B\uD83C\uDD30\uD83C\uDD48 \uD83C\uDD46\uD83C\uDD38\uD83C\uDD43\uD83C\uDD37 \uD83C\uDD42\uD83C\uDD38\uD83C\uDD3C\uD83C\uDD42"+ Colors.resetColor);
+        System.out.println();
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t-------------------------------");
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t⓪ -    \uD83C\uDD34\uD83C\uDD47\uD83C\uDD38\uD83C\uDD43");
+        System.out.println();
+        System.out.println("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"+ Colors.cyanBColor +"                               "+ Colors.resetColor);
+        System.out.print("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\uD83C\uDD5E\uD83C\uDD5F\uD83C\uDD63\uD83C\uDD58\uD83C\uDD5E\uD83C\uDD5D:");
+
+    }
+
+
 
 
 

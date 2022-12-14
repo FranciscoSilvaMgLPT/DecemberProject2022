@@ -1,6 +1,6 @@
 package Games.BattleshipGame;
 
-import Games.Collors;
+import Games.Colors;
 import Games.TextEditor;
 import player.Icons;
 import player.Player;
@@ -346,7 +346,7 @@ public class BattleshipMain {
                         }
                         break;
                     case 1:     //Bot turn
-                        System.out.println(Collors.redCollor + "Enemies are firing up! Watch out!" + Collors.resetCollor);
+                        System.out.println(Colors.redColor + "Enemies are firing up! Watch out!" + Colors.resetColor);
                         while (botShot == false) {
                             numX = (int) (Math.random() * 9);
                             numY = (int) (Math.random() * 9);

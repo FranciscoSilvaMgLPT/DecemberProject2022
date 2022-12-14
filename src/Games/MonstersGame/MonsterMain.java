@@ -1,6 +1,6 @@
 package Games.MonstersGame;
 
-import Games.Collors;
+import Games.Colors;
 import player.Icons;
 import player.Player;
 
@@ -56,7 +56,7 @@ public class MonsterMain {
         for (int i = 0; i < monsterPlayers.size(); i++) {                      //Monsters choose
             for (int j = 1; j <= numberOfMonsters; j++) {
                 System.out.println(monsters);
-                System.out.println(Collors.blueCollor + monsterPlayers.get(i) + "choose your monsters:" + Collors.resetCollor);
+                System.out.println(Colors.blueColor + monsterPlayers.get(i) + "choose your monsters:" + Colors.resetColor);
                 System.out.println("Monster (" + j + " of " + numberOfMonsters + ")");
                 System.out.print("Option:");
                 int optionMonster = sc.nextInt();
@@ -143,7 +143,7 @@ public class MonsterMain {
                     monstersTeam0.get(monsterAttack).attack(monstersTeam1.get(monsterDef));
 
                     if (monstersTeam1.get(monsterDef).health <= 0) {
-                        System.out.println(Collors.redCollor + monstersTeam1.get(monsterDef).name + " from " + player1 + " got killed! He has been removed from enemy team!" + Collors.resetCollor);
+                        System.out.println(Colors.redColor + monstersTeam1.get(monsterDef).name + " from " + player1 + " got killed! He has been removed from enemy team!" + Colors.resetColor);
                         monstersTeam1.remove(monsterDef);
                         System.out.println("Enter any key to continue.");
                         passEnter = sc.next();
@@ -164,7 +164,7 @@ public class MonsterMain {
                     monstersTeam1.get(monsterAttack).attack(monstersTeam0.get(monsterDef));
 
                     if (monstersTeam0.get(monsterDef).health <= 0) {
-                        System.out.println(Collors.redCollor + monstersTeam0.get(monsterDef).name + "from " + player0 + " got killed! He has been removed from enemy team!" + Collors.resetCollor);
+                        System.out.println(Colors.redColor + monstersTeam0.get(monsterDef).name + "from " + player0 + " got killed! He has been removed from enemy team!" + Colors.resetColor);
                         monstersTeam0.remove(monsterDef);
                         System.out.println("Enter any key to continue.");
                         passEnter = sc.next();

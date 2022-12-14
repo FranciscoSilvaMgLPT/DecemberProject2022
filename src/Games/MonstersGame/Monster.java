@@ -1,6 +1,6 @@
 package Games.MonstersGame;
 
-import Games.Collors;
+import Games.Colors;
 
 public abstract class Monster {
 
@@ -16,7 +16,7 @@ public abstract class Monster {
 
     @Override
     public String toString() {
-      return "Monster nº ["+position+"]-> " + Collors.redCollor + name + Collors.resetCollor + "\n" +
+      return "Monster nº ["+position+"]-> " + Colors.redColor + name + Colors.resetColor + "\n" +
                     "Health❤️: " + health + "\n" +
                     "Damage💥: " + damage + "\n" +
                     "Info📜: " + info + "\n"+
