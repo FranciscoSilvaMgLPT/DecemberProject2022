@@ -56,7 +56,7 @@ public class BaseApp {
                proceed = true;
            } catch (Exception e) {
                sc.nextLine();
-               System.out.println("Focus! Do you wan't to play or not?");
+               System.out.println("Focus! Do you want to play or not?");
            }
        }
 
