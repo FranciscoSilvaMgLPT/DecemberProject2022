@@ -105,74 +105,94 @@ public class TheSims {
 
                     break;
                 case 2:
-                    System.out.println("1- Go to work?  ||  2-Find a job?");
-                    System.out.print("Option:");
-                    int chosenOption = sc.nextInt();
-                    switch (chosenOption) {
-                        case 1:
-                            if (person.profession == unemployed || person.profession == null) {
-                                System.out.println("First go find a job! Right?!?");
+                    if (person.age < 18) {
+                        System.out.println("1- Ask parents for money  ||  2-Nevermind..");
+                        int chosenOption = sc.nextInt();
+                        switch (chosenOption) {
+                            case 1:
+                                System.out.println("Take 15€ my son!");
+                                person.cash = person.cash + 15;
+                                break;
+                            case 2:
+                                break;
+                        }
+                    } else {
+                        System.out.println("1- Go to work?  ||  2-Find a job?");
+                        System.out.print("Option:");
+                        int chosenOption = sc.nextInt();
+                        switch (chosenOption) {
+                            case 1:
+                                if (person.profession == unemployed || person.profession == null) {
+                                    System.out.println("First go find a job! Right?!?");
+                                    System.out.println();
+                                } else {
+                                    System.out.println("A day at work has past!");
+                                    person.setCash(person.cash + person.profession.salary);
+                                    System.out.println();
+                                }
+                                person.timeHasPast();
+                                break;
+                            case 2:
+                                System.out.println(Colors.redColor + "Choose a job:\n[1]- House Cleaner  ||  [2]- Uber Driver  || [3]- Software Programmer");
+                                System.out.print("Job ID number:");
+                                int jobID = sc.nextInt();
+                                switch (jobID) {
+                                    case 1:
+                                        person.setProfession(houseCleaner);
+                                        System.out.println("You have been hired has House Cleaner.");
+                                        break;
+                                    case 2:
+                                        person.setProfession(uberDriver);
+                                        System.out.println("You have been hired has Uber Driver.");
+                                        break;
+                                    case 3:
+                                        person.setProfession(softwareProgrammer);
+                                        System.out.println("You have been hired has Software Programmer.");
+                                        break;
+                                }
                                 System.out.println();
-                            } else {
-                                System.out.println("A day at work has past!");
-                                person.cash = person.cash + person.salary;
-                                System.out.println();
-
-                            }
-                            person.timeHasPast();
-                            break;
-                        case 2:
-                            System.out.println(Colors.redColor + "Choose a job:\n[1]- House Cleaner  ||  [2]- Uber Driver  || [3]- Software Programmer");
-                            System.out.print("Job ID number:");
-                            int jobID = sc.nextInt();
-                            switch (jobID) {
-                                case 1:
-                                    person.setProfession(houseCleaner);
-                                    System.out.println("You have been hired has House Cleaner.");
-                                    break;
-                                case 2:
-                                    person.setProfession(uberDriver);
-                                    System.out.println("You have been hired has Uber Driver.");
-                                    break;
-                                case 3:
-                                    person.setProfession(softwareProgrammer);
-                                    System.out.println("You have been hired has Software Programmer.");
-                                    break;
-                            }
-                            System.out.println();
-                            person.timeHasPast();
+                                person.timeHasPast();
+                        }
                     }
-                    break;
-                case 3:
-                    person.timeHasPast();
-                    person.eat();
-                    System.out.println();
-                    break;
-                case 4:
-                    person.timeHasPast();
-                    person.doBasicNeeds();
-                    System.out.println();
-                    break;
-                case 5:
-                    person.timeHasPast();
-                    person.ageADay();
-                    System.out.println();
-                    break;
-                case 6:
-                    person.timeHasPast();
-                    person.comunicate();
-                    System.out.println();
-                    break;
-                case 0:
-                    playing = false;
-                    break;
-            }
-            if (person.basicNeedsLvl <= 0 || person.hungerLvl <= 0){
+                        break;
+                        case 3:
+                            person.timeHasPast();
+                            person.eat();
+                            System.out.println();
+                            break;
+                        case 4:
+                            person.timeHasPast();
+                            person.doBasicNeeds();
+                            System.out.println();
+                            break;
+                        case 5:
+                            person.timeHasPast();
+                            person.ageADay();
+                            System.out.println();
+                            break;
+                        case 6:
+                            person.timeHasPast();
+                            person.comunicate();
+                            System.out.println();
+                            break;
+                        case 0:
+                            playing = false;
+                            break;
+                    }
+            if (person.basicNeedsLvl <= 0 || person.hungerLvl <= 0) {
+                if(person.basicNeedsLvl<=0){
+                    System.out.println(person.name+" pee himself to death. 💦☠️");
+                }
+                if(person.hungerLvl<=0){
+                    System.out.println(person.name+" died of hunger! You nasty MF! 🤬");
+                }
                 System.out.println();
-                System.out.println(person.name + ": Fck! I died! Damn 😰☠️⚰️");
-                System.out.println("🪦Here lays "+person.name+", a bad Sims player.🪦");
+                System.out.println(person.name + ": Fck! I died! Damn 😰⚰️");
+                System.out.println(person.name + " died at " + person.age + " years old.");
+                System.out.println("🪦Here lays " + person.name + ", a bad Sims player.🪦");
                 System.out.println();
                 Person.personList.remove(person);
+                playing = false;
             }
         }
     }

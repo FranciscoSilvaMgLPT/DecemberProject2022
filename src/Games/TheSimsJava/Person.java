@@ -13,7 +13,6 @@ public class Person implements LivingThing {
     String name;
     int age;
     Profession profession;
-    int salary;
     int cash = 200;
     Person spouse = null;
     int hungerLvl = 100;
@@ -72,14 +71,6 @@ public class Person implements LivingThing {
         this.profession = profession;
     }
 
-    public int getSalary() {
-        return salary;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
     public String getSpouse() {
         return spouse.name;
     }
@@ -106,9 +97,9 @@ public class Person implements LivingThing {
 
     public String seePersonList() {
         if (spouse == null) {
-            return "Name: " + name + Colors.greenColor + " | 💰Cash: " + cash + Colors.resetColor + "| 🎂Age: " + age + " | 📁Profession: " + profession + " | 💶Salary: " + salary + " | 💍Spouse: Unmarried";
+            return "Name: " + name + Colors.greenColor + " | 💰Cash: " + cash + Colors.resetColor + "| 🎂Age: " + age + " | 📁Profession: " + profession + " | 💶Salary: " + profession.salary + " | 💍Spouse: Unmarried";
         } else {
-            return "Name: " + name + Colors.greenColor + " | 💰Cash: " + cash + Colors.resetColor + "| 🎂Age: " + age + " | 📁Profession: " + profession + " | 💶Salary: " + salary + " | 💍Spouse: " + spouse.name;
+            return "Name: " + name + Colors.greenColor + " | 💰Cash: " + cash + Colors.resetColor + "| 🎂Age: " + age + " | 📁Profession: " + profession + " | 💶Salary: " + profession.salary + " | 💍Spouse: " + spouse.name;
         }
     }
 
@@ -123,16 +114,20 @@ public class Person implements LivingThing {
     public Person makeProposal(Person person1) {
         System.out.println(name + " got on his knees and asked " + person1.getName() + " for marriage!");
         int proposalChance = (int) (Math.random() * 3) + 1;
-        switch (proposalChance) {
-            case 1:
-                System.out.println(person1.getName() + ": OMG!!! YES!!!!!!!!!!!! I LOVE YOU " + name);
-                person1.setSpouse(this);
-                this.spouse = person1;
+        if(age < 18 || person1.age<18){
+            System.out.println("No age for that!");
+        }else {
+            switch (proposalChance) {
+                case 1:
+                    System.out.println(person1.getName() + ": OMG!!! YES!!!!!!!!!!!! I LOVE YOU " + name);
+                    person1.setSpouse(this);
+                    this.spouse = person1;
 
-                return person1;
-            default:
-                System.out.println(person1.getName() + ": What?1? Ofc not! Get away!");
-                break;
+                    return person1;
+                default:
+                    System.out.println(person1.getName() + ": What?1? Ofc not! Get away!");
+                    break;
+            }
         }
         return null;
     }
@@ -141,15 +136,19 @@ public class Person implements LivingThing {
     public void proposeNikiNiki(Person person) {
         int nikinikiChance = (int) (Math.random() * 3) + 1;
         System.out.println(this.name + ": Hi " + person.name + " do you want to nikiniki with me?😬❤️");
-        switch (nikinikiChance) {
-            case 1:
-            case 2:
-                System.out.println(person.name + ": hm..🤔 Lets go!😈 ❤️‍🔥");
-                this.makeNikiNiki(person);
-                break;
-            case 3:
-                System.out.println(person.name + ": hm..🤔 Think not!! CYA! 😖💥🤬");
-                break;
+        if(age < 18 || person.age<18){
+            System.out.println("No age for that!");
+        }else {
+            switch (nikinikiChance) {
+                case 1:
+                case 2:
+                    System.out.println(person.name + ": hm..🤔 Lets go!😈 ❤️‍🔥");
+                    this.makeNikiNiki(person);
+                    break;
+                case 3:
+                    System.out.println(person.name + ": hm..🤔 Think not!! CYA! 😖💥🤬");
+                    break;
+            }
         }
         timeHasPast();
     }
@@ -205,6 +204,14 @@ public class Person implements LivingThing {
         System.out.println(name + " 🎂 happy birthday to me! Happy birthday to " + name + "! IEEIII!! I was so bothered of having " + age + " years old, finally I'm " + (age + 1) + "!!\n");
         this.age++;
         timeHasPast();
+        int deathChance = (int) (Math.random() * 10) + 1;
+        if(age>60){
+            deathChance = (int) (Math.random() * 4) + 1;
+        }
+        if (deathChance == 1){
+            System.out.println("Unlucky you! "+name+" just died! RIP!⚰️");
+            personList.remove(this);
+        }
     }
 
     @Override
@@ -224,6 +231,10 @@ public class Person implements LivingThing {
         }else{
             System.out.println("Damn... I have no money!! 😱");
         }
+    }
+
+    public void setCash(int cash) {
+        this.cash = cash;
     }
 
     @Override
