@@ -10,7 +10,6 @@ import java.util.Scanner;
 
 public class BaseApp {
     static Scanner sc = new Scanner(System.in);
-    static int option;
     static String name;
 
    public static void StartApp() {
@@ -18,6 +17,7 @@ public class BaseApp {
        while (!proceed) {
            TextEditor.BaseIntro();
            TextEditor.GameList();
+           int option;
            try {
                option = sc.nextInt();
                switch (option) {
